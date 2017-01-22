@@ -30,12 +30,12 @@ class DataTree {
         this.depth = 0;  // root node only.
 
         // Step 1: Establish first layer.
-        treeify_leading_variable(data, 'Type', root);
+        let priors_hashmap = treeify_leading_variable(data, 'Type', root);
         this.depth = 1;  // first major column only.
 
         // Step 2: Establish second layer.
-
-        // Step 3: 
+        let next_hashmap = treeify_nonleading_variable(data, 'Subtype', priors_hashmap);
+        this.depth = 1;
 
 
         // TODO: Extend this methodology to n layers.
@@ -66,10 +66,46 @@ function treeify_leading_variable(data, colname, root) {
     // Given input data in a JSON format returned by one of the d3 data ingestion methods, this method converts that
     // datas' leading variable into an array of the form [['Column Name', #], [.,.], ...].
     let type_nodes = columnify_leading_variable(data, colname);
-    type_nodes.forEach(function(datum) { root.children.push(new DataNode(datum[0], datum[1], root, [])); });
+    let priors_hashmap = {};
+    type_nodes.forEach(function(datum) {
+        let [name, n] = datum;
+        let new_node = new DataNode(name, n, root, []);
+        root.children.push(new_node);  // add the node to the tree
+        priors_hashmap[name] = new_node;  // hash node for lookup later.
+    });
+    return priors_hashmap;
 }
 
-// console.log(columnify_leading_variable(data, 'Type'));
+function columnify_nonleading_variable(data, colname) {
+    let colnames = Object.keys(data[0]);
+    let prior_colname = colnames[colnames.indexOf('Subtype') - 1];
+    let groups = _.groupBy(data, colname);
+    let keys = Object.keys(groups);
+
+    let counts = [];
+    let priors = [];
+    for (let key of keys) {
+        // an intermediate column may be repeated multiple times, so the group is always a list.
+        // But they ought to have the same predecessor value, so we just use the first one.
+        priors.push(groups[key][0][prior_colname]);
+        counts.push(_.reduce(groups[key], function(sum, d) { return sum + Number(d['Count']); }, 0));
+    }
+
+    return _.zip(keys, counts, priors);
+}
+
+function treeify_nonleading_variable(data, colname, priors_hashmap) {
+    let type_nodes = columnify_nonleading_variable(data, colname);
+    let new_priors_hashmap = {};
+    type_nodes.forEach(function(datum) {
+        let [name, n, prior] = datum;
+        let new_node = new DataNode(name, n, priors_hashmap[prior], []);
+        priors_hashmap[prior].children.push(new_node);  // add the node to the tree
+        new_priors_hashmap[name] = new_node;  // hash node for lookup later.
+    });
+    return new_priors_hashmap;
+}
+
 debugger;
 let tree = new DataTree(data);
 
