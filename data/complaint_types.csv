@@ -1,7 +1,7 @@
 Type,Subtype,Count
 Air Quality,Indoor Air Quality,4361
 Air Quality,Smoking,1629
-Air Quality,Unspecified,8843
+Air Quality,Unspecified Air Quality Issue,8843
 Animal Issues,Animal Abuse,10087
 Animal Issues,Animal Facility Issue,120
 Animal Issues,Animal in a Park,1880
@@ -22,7 +22,7 @@ Building Maintenance,Paint or Plaster,60463
 Building Maintenance,Plumbing,4170
 Building Maintenance,Schools,1761
 Building Maintenance,Sewer or Sidewalk Condition,8010
-Building Maintenance,Unspecified,14425
+Building Maintenance,Unspecified Building Maintenance Issue,14425
 Construction,Site Safety,1135
 Consumer Complaint,Food Establishment Complaint,10213
 Consumer Complaint,Food Poisoning,3549
@@ -34,7 +34,7 @@ Consumer Complaint,Paid Professional Complaint,434
 Consumer Complaint,Senior Center Complaint,386
 Consumer Complaint,Street Vendor Complaint,4734
 Consumer Complaint,Taxi Complaint,18962
-Consumer Complaint,Unspecified,43362
+Consumer Complaint,Unspecified Consumer Complaint,43362
 Crime,Disorderly Youth,234
 Crime,Drug Activity,261
 Crime,Elder Abuse,471
@@ -43,7 +43,7 @@ Crime,Illegal Alcohol,1538
 Crime,Illegal Fireworks,221
 Crime,Non-Emergency Police Matter,9225
 Crime,Posting Advertisement,1119
-Crime,Unspecified,8584
+Crime,Unspecified Crime,8584
 Crime,Urinating in Public,476
 Fire Safety,Fire Alarm,547
 Fire Safety,Fire Safety Director On-Site Exam Scheduling,4964
@@ -58,18 +58,18 @@ General,Found Property,314
 General,Housing Inquiry,1771
 General,Inquiry,502
 General,Other Enforcement,18292
-General,Unspecified,1099
+General,Unspecified Miscellaneous Issue,1099
 Greenery,Damaged Tree,24880
 Greenery,Dead or Dying Tree,10794
 Greenery,Illegal Tree Damage,3154
 Greenery,New Tree Request,18347
 Greenery,Overgrown Tree or Branches,12919
 Greenery,Poison Ivy,131
-Greenery,Unspecified,232
+Greenery,Unspecified Greenery Issue,232
 Heat or Water,Boilers,1719
 Heat or Water,Non-Residential Heat,987
 Heat or Water,Plumbing,52713
-Heat or Water,Unspecified,222542
+Heat or Water,Unspecified Heat or Water Problem,222542
 Heat or Water,Water Conservation,4306
 Heat or Water,Water Leak,31439
 Heat or Water,Water Quality,1598
@@ -80,7 +80,7 @@ Homelessness,Panhandling,479
 Illegal Parking,Blocked Driveway,119358
 Illegal Parking,City Vehicle Placard Complaint,352
 Illegal Parking,Derelict Vehicle,57354
-Illegal Parking,Unspecified,122724
+Illegal Parking,Unspecified Parking Violation,122724
 Noise,Commerical Noise,49120
 Noise,Helicopter,1097
 Noise,Park,3994
@@ -89,16 +89,16 @@ Noise,Public Assembly,475
 Noise,Residential Noise,228582
 Noise,Sanitation Trucks,199
 Noise,Street or Sidewalk Noise,61260
-Noise,Unspecified,58563
+Noise,Unspecified Noise Complaint,58563
 Noise,Vehicle Noise,23883
 Paperwork,Benefit Card Replacement,25102
 Paperwork,DCA or DOH New License Application Request,1808
 Paperwork,Literature Request,36558
 Paperwork,Parking Status Request,6349
-Paperwork,Tattooing,81
-Paperwork,Unspecified,211
+Paperwork,Tattooing Paperwork Inquiry,81
+Paperwork,Unspecified Paperwork Inquiry,211
 Parks,Parks Violation,2279
-Parks,Unspecified,1939
+Parks,Unspecified Issue,1939
 Property and Buildings,Low Income Senior Citizen Housing,5994
 Property and Buildings,Disability Rent Increase Exemption,590
 Property and Buildings,Real Property Income and Expense Issue,244
@@ -107,7 +107,7 @@ Property and Housing,Payment Issue,4120
 Property and Housing,Property Account Update,6555
 Property and Housing,Property Reduction,10263
 Property and Housing,Senior Citizen Rent Increase Exemption,6569
-Property and Housing,Unspecified,1748
+Property and Housing,Unspecified Property Issue,1748
 Public Transit,Bus Stop Shelter Placement,204
 Public Transit,Ferry Inquiry or Complaint,917
 Sanitation,Electronic Waste Disposal,2965
@@ -126,7 +126,7 @@ Sanitation,Sewer,33091
 Sanitation,Standing Water,5633
 Sanitation,Sweeping,1010
 Sanitation,Unsanitary Pigeon Condition,654
-Sanitation,Unspecified,149754
+Sanitation,Unspecified Sanitary Issue,149754
 Sanitation,Vacant Lot Condition,2158
 Street Condition,Bike Rack Condition,109
 Street Condition,Bridge or Tunnel Condition,359
@@ -143,5 +143,5 @@ Street Condition,Snow,5478
 Street Condition,Street Light Condition,89201
 Street Condition,Traffic,5485
 Street Condition,Traffic Signal Condition,37606
-Street Condition,Unspecified,90882
+Street Condition,Unspecified Street Condition,90882
 Unknown,Appliance,12618
