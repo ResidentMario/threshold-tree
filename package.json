@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "main": "threshold-tree.js",
   "dependencies": {
-    "babel-cli": "^6.22.2",
-    "d3": "^4.4.1",
     "lodash": "^4.17.4"
   },
   "browserslist": [
@@ -12,16 +10,17 @@
     "last 2 versions"
   ],
   "devDependencies": {
+    "babel-cli": "^6.22.2",
     "mocha": "^3.1.2"
   },
   "scripts": {
     "babel-cli": "babel",
     "test": "mocha"
   },
-  "author": "",
+  "author": "Aleksey Bilogur",
   "license": "ISC",
   "directories": {
     "test": "test"
   },
-  "description": ""
+  "description": "Tree data structure with customizable numerical tree-shaking."
 }
