@@ -1,17 +1,6 @@
 'use strict';
 
-// Load in the data file as it would be loaded in the browser.
-const fs = require('fs');
-const csvString = fs.readFileSync('data/complaint_types.csv').toString();
-const d3 = require('d3');
-const data = d3.csvParse(csvString);
-
-// Additional imports needed.
 const _ = require('lodash');
-
-// let D3Node = require('d3-node');
-// let d3 = D3Node.d3;
-//let d3n = new D3Node();
 
 class DataNode {
     constructor(name, n, parent, children) {
@@ -19,7 +8,7 @@ class DataNode {
     }
 }
 
-class DataTree {
+class ThresholdTree {
     
     constructor(data, threshold) {
 
@@ -28,9 +17,10 @@ class DataTree {
         // Turn the data read-out into a tree.
         // Step 0: Generate a tree root.
         let n =_.reduce(data, function(sum, d) { return sum + Number(d['Count']); }, 0);
-        let root = new DataNode('root', n, null, []); // TODO: compute n for everything altogether.
+        let root = new DataNode('root', n, null, []);
         this.root = root;
         this.depth = 0;  // root node only.
+        this.n = n;
 
         // Step 1: Establish first layer.
         let priors_hashmap = treeify_leading_variable(data, 'Type', root);
@@ -149,10 +139,7 @@ function traverse_and_shake(node, threshold) {
             node.parent.children = node.parent.children.filter(function(nd) { return nd.name != node.name; });
         }
     }
-
-
 }
 
-let tree = new DataTree(data);
-
-// TODO: Correct the one thing incorrectly exported as just "Property" in the 311 dataset.
+// Export the tree struct.
+exports.ThresholdTree = ThresholdTree;
