@@ -1,5 +1,5 @@
 {
-  "name": "d3-log-treemap",
+  "name": "threshold-tree",
   "version": "1.0.0",
   "main": "threshold-tree.js",
   "dependencies": {

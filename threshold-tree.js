@@ -1,6 +1,10 @@
 'use strict';
 
-const _ = require('lodash');
+// Cherry-pick only necessary parts of lodash, for the benefit of browserify.
+const _reduce = require('lodash/reduce');
+const _groupBy = require('lodash/groupBy');
+const _zip = require('lodash/zip');
+const _ = { 'reduce': _reduce, 'groupBy': _groupBy, 'zip': _zip };
 
 class DataNode {
     constructor(name, n, parent, children) {
