@@ -42,7 +42,16 @@ class ThresholdTree {
         traverse_and_shake(this.root, this.threshold);
 
     }
-    
+
+    as_hierarchy() {
+        let repr = [];
+        traverse_and_flatten(this.root, repr);
+        return repr;
+    }
+    // TODO: Add the d3.stratify() call necessary to get this working, and keep it from crashing (as it does currently).
+    // cf. https://github.com/d3/d3-hierarchy/issues/33
+    // cf. the traverse_and_flatten docstring.
+
 }
 
 function columnify_leading_variable(data, colname) {
@@ -142,6 +151,26 @@ function traverse_and_shake(node, threshold) {
             // Remove this node from the parent's children.
             node.parent.children = node.parent.children.filter(function(nd) { return nd.name != node.name; });
         }
+    }
+}
+
+function traverse_and_flatten(node, repr) {
+    // Traverses the tree and returns a representation of it which has been flattened into a simple list of the form:
+    // [{"name": "Eve", "parent": "Cain"}, {...}, ...]
+    // The D3 treemap algorithm (and other layout algorithms like it) expect you to provide it data in the form of the
+    // root node of a hierarchy of nodes generated using D3's internal methods. This format is very similar to the one
+    // used by the ThresholdTree that we have defined here, but is private, and is not exported when D3 is imported.
+    // Hence we can't extend the D3 classes themselves in order to create that tree directly.
+    //
+    // So instead we flatten our own representation into an intermediate one which can be read by D3, the one above.
+    // For further details see https://github.com/d3/d3-hierarchy/blob/master/README.md#stratify.
+    //
+    // This requires a surprising amount of sophistication. See http://stackoverflow.com/a/41813193/1993206.
+    node.children.map(function(subnode) {
+        traverse_and_flatten(subnode, repr);
+    });
+    if (node.parent != null) {
+        repr.push({"name": node.name, "parent": node.parent.name, "n": node.n})
     }
 }
 
