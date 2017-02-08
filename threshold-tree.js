@@ -170,8 +170,16 @@ function traverse_and_flatten(node, repr) {
         traverse_and_flatten(subnode, repr);
     });
     if (node.parent != null) {
-        repr.push({"name": node.name, "parent": node.parent.name, "n": node.n})
+        repr.push({
+            "name": node.name,
+            "parent": node.parent.name,
+            "n": node.n,
+            "children": node.children.map(function(child) {
+                if (child.name != "Other") { return child.name; } else { return `Other (${node.name})`; }
+            })
+        })
     }
+    return repr;
 }
 
 // Export the tree struct.
