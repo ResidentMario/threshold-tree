@@ -1,0 +1,1328 @@
+[
+    {
+        "name": "root",
+        "parent": "",
+        "n": 2374716,
+        "children": [
+            "Building Maintenance",
+            "Heat or Water",
+            "Illegal Parking",
+            "Noise",
+            "Sanitation",
+            "Street Condition",
+            "Other"
+        ]
+    },
+    {
+        "name": "Door or Window",
+        "parent": "Building Maintenance",
+        "n": 37656,
+        "children": []
+    },
+    {
+        "name": "Electrical",
+        "parent": "Building Maintenance",
+        "n": 31486,
+        "children": []
+    },
+    {
+        "name": "General Construction or Plumbing",
+        "parent": "Building Maintenance",
+        "n": 30369,
+        "children": []
+    },
+    {
+        "name": "Illegal Conversion",
+        "parent": "Building Maintenance",
+        "n": 27587,
+        "children": []
+    },
+    {
+        "name": "Paint or Plaster",
+        "parent": "Building Maintenance",
+        "n": 60463,
+        "children": []
+    },
+    {
+        "name": "Plumbing",
+        "parent": "Building Maintenance",
+        "n": 56883,
+        "children": []
+    },
+    {
+        "name": "Asbestos",
+        "parent": "Other (Building Maintenance)",
+        "n": 2075,
+        "children": []
+    },
+    {
+        "name": "Cable Complaint",
+        "parent": "Other (Building Maintenance)",
+        "n": 1015,
+        "children": []
+    },
+    {
+        "name": "Elevator",
+        "parent": "Other (Building Maintenance)",
+        "n": 13532,
+        "children": []
+    },
+    {
+        "name": "Flooding or Stairs",
+        "parent": "Other (Building Maintenance)",
+        "n": 23961,
+        "children": []
+    },
+    {
+        "name": "Lead",
+        "parent": "Other (Building Maintenance)",
+        "n": 11444,
+        "children": []
+    },
+    {
+        "name": "Schools",
+        "parent": "Other (Building Maintenance)",
+        "n": 1761,
+        "children": []
+    },
+    {
+        "name": "Sewer or Sidewalk Condition",
+        "parent": "Other (Building Maintenance)",
+        "n": 8010,
+        "children": []
+    },
+    {
+        "name": "Unspecified Building Maintenance Issue",
+        "parent": "Other (Building Maintenance)",
+        "n": 14425,
+        "children": []
+    },
+    {
+        "name": "Other (Building Maintenance)",
+        "parent": "Building Maintenance",
+        "n": 76223,
+        "children": [
+            "Asbestos",
+            "Cable Complaint",
+            "Elevator",
+            "Flooding or Stairs",
+            "Lead",
+            "Schools",
+            "Sewer or Sidewalk Condition",
+            "Unspecified Building Maintenance Issue"
+        ]
+    },
+    {
+        "name": "Building Maintenance",
+        "parent": "root",
+        "n": 267954,
+        "children": [
+            "Door or Window",
+            "Electrical",
+            "General Construction or Plumbing",
+            "Illegal Conversion",
+            "Paint or Plaster",
+            "Plumbing",
+            "Other (Building Maintenance)"
+        ]
+    },
+    {
+        "name": "Unspecified Heat or Water Problem",
+        "parent": "Heat or Water",
+        "n": 222542,
+        "children": []
+    },
+    {
+        "name": "Water System",
+        "parent": "Heat or Water",
+        "n": 73486,
+        "children": []
+    },
+    {
+        "name": "Boilers",
+        "parent": "Other (Heat or Water)",
+        "n": 1719,
+        "children": []
+    },
+    {
+        "name": "Non-Residential Heat",
+        "parent": "Other (Heat or Water)",
+        "n": 987,
+        "children": []
+    },
+    {
+        "name": "Water Conservation",
+        "parent": "Other (Heat or Water)",
+        "n": 4306,
+        "children": []
+    },
+    {
+        "name": "Water Leak",
+        "parent": "Other (Heat or Water)",
+        "n": 31439,
+        "children": []
+    },
+    {
+        "name": "Water Quality",
+        "parent": "Other (Heat or Water)",
+        "n": 1598,
+        "children": []
+    },
+    {
+        "name": "Other (Heat or Water)",
+        "parent": "Heat or Water",
+        "n": 40049,
+        "children": [
+            "Boilers",
+            "Non-Residential Heat",
+            "Water Conservation",
+            "Water Leak",
+            "Water Quality"
+        ]
+    },
+    {
+        "name": "Heat or Water",
+        "parent": "root",
+        "n": 388790,
+        "children": [
+            "Unspecified Heat or Water Problem",
+            "Water System",
+            "Other (Heat or Water)"
+        ]
+    },
+    {
+        "name": "Blocked Driveway",
+        "parent": "Illegal Parking",
+        "n": 119358,
+        "children": []
+    },
+    {
+        "name": "Derelict Vehicle",
+        "parent": "Illegal Parking",
+        "n": 57354,
+        "children": []
+    },
+    {
+        "name": "Unspecified Parking Violation",
+        "parent": "Illegal Parking",
+        "n": 122724,
+        "children": []
+    },
+    {
+        "name": "City Vehicle Placard Complaint",
+        "parent": "Other (Illegal Parking)",
+        "n": 352,
+        "children": []
+    },
+    {
+        "name": "Other (Illegal Parking)",
+        "parent": "Illegal Parking",
+        "n": 352,
+        "children": [
+            "City Vehicle Placard Complaint"
+        ]
+    },
+    {
+        "name": "Illegal Parking",
+        "parent": "root",
+        "n": 299788,
+        "children": [
+            "Blocked Driveway",
+            "Derelict Vehicle",
+            "Unspecified Parking Violation",
+            "Other (Illegal Parking)"
+        ]
+    },
+    {
+        "name": "Commerical Noise",
+        "parent": "Noise",
+        "n": 49120,
+        "children": []
+    },
+    {
+        "name": "Residential Noise",
+        "parent": "Noise",
+        "n": 228582,
+        "children": []
+    },
+    {
+        "name": "Street or Sidewalk Noise",
+        "parent": "Noise",
+        "n": 61260,
+        "children": []
+    },
+    {
+        "name": "Unspecified Noise Complaint",
+        "parent": "Noise",
+        "n": 58563,
+        "children": []
+    },
+    {
+        "name": "Helicopter",
+        "parent": "Other (Noise)",
+        "n": 1097,
+        "children": []
+    },
+    {
+        "name": "Park",
+        "parent": "Other (Noise)",
+        "n": 3994,
+        "children": []
+    },
+    {
+        "name": "Place of Worship",
+        "parent": "Other (Noise)",
+        "n": 924,
+        "children": []
+    },
+    {
+        "name": "Public Assembly",
+        "parent": "Other (Noise)",
+        "n": 475,
+        "children": []
+    },
+    {
+        "name": "Sanitation Trucks",
+        "parent": "Other (Noise)",
+        "n": 199,
+        "children": []
+    },
+    {
+        "name": "Vehicle Noise",
+        "parent": "Other (Noise)",
+        "n": 23883,
+        "children": []
+    },
+    {
+        "name": "Other (Noise)",
+        "parent": "Noise",
+        "n": 30572,
+        "children": [
+            "Helicopter",
+            "Park",
+            "Place of Worship",
+            "Public Assembly",
+            "Sanitation Trucks",
+            "Vehicle Noise"
+        ]
+    },
+    {
+        "name": "Noise",
+        "parent": "root",
+        "n": 428097,
+        "children": [
+            "Commerical Noise",
+            "Residential Noise",
+            "Street or Sidewalk Noise",
+            "Unspecified Noise Complaint",
+            "Other (Noise)"
+        ]
+    },
+    {
+        "name": "Missed Collections",
+        "parent": "Sanitation",
+        "n": 30203,
+        "children": []
+    },
+    {
+        "name": "Rodent",
+        "parent": "Sanitation",
+        "n": 32040,
+        "children": []
+    },
+    {
+        "name": "Sewer",
+        "parent": "Sanitation",
+        "n": 33091,
+        "children": []
+    },
+    {
+        "name": "Unspecified Sanitary Issue",
+        "parent": "Sanitation",
+        "n": 149754,
+        "children": []
+    },
+    {
+        "name": "Electronic Waste Disposal",
+        "parent": "Other (Sanitation)",
+        "n": 2965,
+        "children": []
+    },
+    {
+        "name": "Hazardous Materials",
+        "parent": "Other (Sanitation)",
+        "n": 3326,
+        "children": []
+    },
+    {
+        "name": "Indoor Sewage",
+        "parent": "Other (Sanitation)",
+        "n": 1249,
+        "children": []
+    },
+    {
+        "name": "Industrial Waste",
+        "parent": "Other (Sanitation)",
+        "n": 1413,
+        "children": []
+    },
+    {
+        "name": "Litter Basket Request",
+        "parent": "Other (Sanitation)",
+        "n": 2819,
+        "children": []
+    },
+    {
+        "name": "Mold",
+        "parent": "Other (Sanitation)",
+        "n": 316,
+        "children": []
+    },
+    {
+        "name": "Mosquitoes",
+        "parent": "Other (Sanitation)",
+        "n": 1066,
+        "children": []
+    },
+    {
+        "name": "Overflowing Litter Basket",
+        "parent": "Other (Sanitation)",
+        "n": 1181,
+        "children": []
+    },
+    {
+        "name": "Public Toilet",
+        "parent": "Other (Sanitation)",
+        "n": 39,
+        "children": []
+    },
+    {
+        "name": "Recycling Enforcement",
+        "parent": "Other (Sanitation)",
+        "n": 648,
+        "children": []
+    },
+    {
+        "name": "Standing Water",
+        "parent": "Other (Sanitation)",
+        "n": 5633,
+        "children": []
+    },
+    {
+        "name": "Sweeping",
+        "parent": "Other (Sanitation)",
+        "n": 1010,
+        "children": []
+    },
+    {
+        "name": "Unsanitary Pigeon Condition",
+        "parent": "Other (Sanitation)",
+        "n": 654,
+        "children": []
+    },
+    {
+        "name": "Vacant Lot Condition",
+        "parent": "Other (Sanitation)",
+        "n": 2158,
+        "children": []
+    },
+    {
+        "name": "Other (Sanitation)",
+        "parent": "Sanitation",
+        "n": 24477,
+        "children": [
+            "Electronic Waste Disposal",
+            "Hazardous Materials",
+            "Indoor Sewage",
+            "Industrial Waste",
+            "Litter Basket Request",
+            "Mold",
+            "Mosquitoes",
+            "Overflowing Litter Basket",
+            "Public Toilet",
+            "Recycling Enforcement",
+            "Standing Water",
+            "Sweeping",
+            "Unsanitary Pigeon Condition",
+            "Vacant Lot Condition"
+        ]
+    },
+    {
+        "name": "Sanitation",
+        "parent": "root",
+        "n": 269565,
+        "children": [
+            "Missed Collections",
+            "Rodent",
+            "Sewer",
+            "Unspecified Sanitary Issue",
+            "Other (Sanitation)"
+        ]
+    },
+    {
+        "name": "Street Light Condition",
+        "parent": "Street Condition",
+        "n": 89201,
+        "children": []
+    },
+    {
+        "name": "Traffic Signal Condition",
+        "parent": "Street Condition",
+        "n": 37606,
+        "children": []
+    },
+    {
+        "name": "Unspecified Street Condition",
+        "parent": "Street Condition",
+        "n": 90882,
+        "children": []
+    },
+    {
+        "name": "Bike Rack Condition",
+        "parent": "Other (Street Condition)",
+        "n": 109,
+        "children": []
+    },
+    {
+        "name": "Bridge or Tunnel Condition",
+        "parent": "Other (Street Condition)",
+        "n": 359,
+        "children": []
+    },
+    {
+        "name": "Broken Parking Meter",
+        "parent": "Other (Street Condition)",
+        "n": 25305,
+        "children": []
+    },
+    {
+        "name": "Curb Condition",
+        "parent": "Other (Street Condition)",
+        "n": 2802,
+        "children": []
+    },
+    {
+        "name": "Damaged Sign",
+        "parent": "Other (Street Condition)",
+        "n": 6970,
+        "children": []
+    },
+    {
+        "name": "Dangling Sign",
+        "parent": "Other (Street Condition)",
+        "n": 2173,
+        "children": []
+    },
+    {
+        "name": "Derelict Bicycle",
+        "parent": "Other (Street Condition)",
+        "n": 1772,
+        "children": []
+    },
+    {
+        "name": "Highway Condition",
+        "parent": "Other (Street Condition)",
+        "n": 3783,
+        "children": []
+    },
+    {
+        "name": "Missing Sign",
+        "parent": "Other (Street Condition)",
+        "n": 4753,
+        "children": []
+    },
+    {
+        "name": "Public Payphone or LinkNYC Complaint",
+        "parent": "Other (Street Condition)",
+        "n": 381,
+        "children": []
+    },
+    {
+        "name": "Sidewalk Condition",
+        "parent": "Other (Street Condition)",
+        "n": 6224,
+        "children": []
+    },
+    {
+        "name": "Snow",
+        "parent": "Other (Street Condition)",
+        "n": 5478,
+        "children": []
+    },
+    {
+        "name": "Traffic",
+        "parent": "Other (Street Condition)",
+        "n": 5485,
+        "children": []
+    },
+    {
+        "name": "Other (Street Condition)",
+        "parent": "Street Condition",
+        "n": 65594,
+        "children": [
+            "Bike Rack Condition",
+            "Bridge or Tunnel Condition",
+            "Broken Parking Meter",
+            "Curb Condition",
+            "Damaged Sign",
+            "Dangling Sign",
+            "Derelict Bicycle",
+            "Highway Condition",
+            "Missing Sign",
+            "Public Payphone or LinkNYC Complaint",
+            "Sidewalk Condition",
+            "Snow",
+            "Traffic"
+        ]
+    },
+    {
+        "name": "Street Condition",
+        "parent": "root",
+        "n": 283283,
+        "children": [
+            "Street Light Condition",
+            "Traffic Signal Condition",
+            "Unspecified Street Condition",
+            "Other (Street Condition)"
+        ]
+    },
+    {
+        "name": "Indoor Air Quality",
+        "parent": "Air Quality",
+        "n": 4361,
+        "children": []
+    },
+    {
+        "name": "Smoking",
+        "parent": "Air Quality",
+        "n": 1629,
+        "children": []
+    },
+    {
+        "name": "Unspecified Air Quality Issue",
+        "parent": "Air Quality",
+        "n": 8843,
+        "children": []
+    },
+    {
+        "name": "Air Quality",
+        "parent": "Other",
+        "n": 14833,
+        "children": [
+            "Indoor Air Quality",
+            "Smoking",
+            "Unspecified Air Quality Issue"
+        ]
+    },
+    {
+        "name": "Animal Abuse",
+        "parent": "Animal Issues",
+        "n": 10087,
+        "children": []
+    },
+    {
+        "name": "Animal in a Park",
+        "parent": "Animal Issues",
+        "n": 1880,
+        "children": []
+    },
+    {
+        "name": "Unsanitary Animal",
+        "parent": "Animal Issues",
+        "n": 2181,
+        "children": []
+    },
+    {
+        "name": "Animal Facility Issue",
+        "parent": "Other (Animal Issues)",
+        "n": 120,
+        "children": []
+    },
+    {
+        "name": "Harboring Bees or Wasps",
+        "parent": "Other (Animal Issues)",
+        "n": 177,
+        "children": []
+    },
+    {
+        "name": "Illegal Animal",
+        "parent": "Other (Animal Issues)",
+        "n": 354,
+        "children": []
+    },
+    {
+        "name": "Unleashed Dog",
+        "parent": "Other (Animal Issues)",
+        "n": 623,
+        "children": []
+    },
+    {
+        "name": "Other (Animal Issues)",
+        "parent": "Animal Issues",
+        "n": 1274,
+        "children": [
+            "Animal Facility Issue",
+            "Harboring Bees or Wasps",
+            "Illegal Animal",
+            "Unleashed Dog"
+        ]
+    },
+    {
+        "name": "Animal Issues",
+        "parent": "Other",
+        "n": 15422,
+        "children": [
+            "Animal Abuse",
+            "Animal in a Park",
+            "Unsanitary Animal",
+            "Other (Animal Issues)"
+        ]
+    },
+    {
+        "name": "Site Safety",
+        "parent": "Construction",
+        "n": 1135,
+        "children": []
+    },
+    {
+        "name": "Construction",
+        "parent": "Other",
+        "n": 1135,
+        "children": [
+            "Site Safety"
+        ]
+    },
+    {
+        "name": "Food Establishment Complaint",
+        "parent": "Consumer Complaint",
+        "n": 10213,
+        "children": []
+    },
+    {
+        "name": "Taxi Complaint",
+        "parent": "Consumer Complaint",
+        "n": 18962,
+        "children": []
+    },
+    {
+        "name": "Unspecified Consumer Complaint",
+        "parent": "Consumer Complaint",
+        "n": 43362,
+        "children": []
+    },
+    {
+        "name": "Food Poisoning",
+        "parent": "Other (Consumer Complaint)",
+        "n": 3549,
+        "children": []
+    },
+    {
+        "name": "For Hire Vehicle Complaint",
+        "parent": "Other (Consumer Complaint)",
+        "n": 6389,
+        "children": []
+    },
+    {
+        "name": "Home Care Provider Complaint",
+        "parent": "Other (Consumer Complaint)",
+        "n": 29,
+        "children": []
+    },
+    {
+        "name": "Home Delivered Meal Complaint",
+        "parent": "Other (Consumer Complaint)",
+        "n": 200,
+        "children": []
+    },
+    {
+        "name": "Municipal Parking Facility",
+        "parent": "Other (Consumer Complaint)",
+        "n": 67,
+        "children": []
+    },
+    {
+        "name": "Paid Professional Complaint",
+        "parent": "Other (Consumer Complaint)",
+        "n": 434,
+        "children": []
+    },
+    {
+        "name": "Senior Center Complaint",
+        "parent": "Other (Consumer Complaint)",
+        "n": 386,
+        "children": []
+    },
+    {
+        "name": "Street Vendor Complaint",
+        "parent": "Other (Consumer Complaint)",
+        "n": 4734,
+        "children": []
+    },
+    {
+        "name": "Other (Consumer Complaint)",
+        "parent": "Consumer Complaint",
+        "n": 15788,
+        "children": [
+            "Food Poisoning",
+            "For Hire Vehicle Complaint",
+            "Home Care Provider Complaint",
+            "Home Delivered Meal Complaint",
+            "Municipal Parking Facility",
+            "Paid Professional Complaint",
+            "Senior Center Complaint",
+            "Street Vendor Complaint"
+        ]
+    },
+    {
+        "name": "Consumer Complaint",
+        "parent": "Other",
+        "n": 88325,
+        "children": [
+            "Food Establishment Complaint",
+            "Taxi Complaint",
+            "Unspecified Consumer Complaint",
+            "Other (Consumer Complaint)"
+        ]
+    },
+    {
+        "name": "Graffiti",
+        "parent": "Crime",
+        "n": 12624,
+        "children": []
+    },
+    {
+        "name": "Non-Emergency Police Matter",
+        "parent": "Crime",
+        "n": 9225,
+        "children": []
+    },
+    {
+        "name": "Unspecified Crime",
+        "parent": "Crime",
+        "n": 8584,
+        "children": []
+    },
+    {
+        "name": "Disorderly Youth",
+        "parent": "Other (Crime)",
+        "n": 234,
+        "children": []
+    },
+    {
+        "name": "Drug Activity",
+        "parent": "Other (Crime)",
+        "n": 261,
+        "children": []
+    },
+    {
+        "name": "Elder Abuse",
+        "parent": "Other (Crime)",
+        "n": 471,
+        "children": []
+    },
+    {
+        "name": "Illegal Alcohol",
+        "parent": "Other (Crime)",
+        "n": 1538,
+        "children": []
+    },
+    {
+        "name": "Illegal Fireworks",
+        "parent": "Other (Crime)",
+        "n": 221,
+        "children": []
+    },
+    {
+        "name": "Posting Advertisement",
+        "parent": "Other (Crime)",
+        "n": 1119,
+        "children": []
+    },
+    {
+        "name": "Urinating in Public",
+        "parent": "Other (Crime)",
+        "n": 476,
+        "children": []
+    },
+    {
+        "name": "Other (Crime)",
+        "parent": "Crime",
+        "n": 4320,
+        "children": [
+            "Disorderly Youth",
+            "Drug Activity",
+            "Elder Abuse",
+            "Illegal Alcohol",
+            "Illegal Fireworks",
+            "Posting Advertisement",
+            "Urinating in Public"
+        ]
+    },
+    {
+        "name": "Crime",
+        "parent": "Other",
+        "n": 34753,
+        "children": [
+            "Graffiti",
+            "Non-Emergency Police Matter",
+            "Unspecified Crime",
+            "Other (Crime)"
+        ]
+    },
+    {
+        "name": "Fire Safety Director On-Site Exam Scheduling",
+        "parent": "Fire Safety",
+        "n": 4964,
+        "children": []
+    },
+    {
+        "name": "Inspection",
+        "parent": "Fire Safety",
+        "n": 849,
+        "children": []
+    },
+    {
+        "name": "Fire Alarm",
+        "parent": "Other (Fire Safety)",
+        "n": 547,
+        "children": []
+    },
+    {
+        "name": "Food Preparation Fire Safety",
+        "parent": "Other (Fire Safety)",
+        "n": 59,
+        "children": []
+    },
+    {
+        "name": "Other (Fire Safety)",
+        "parent": "Fire Safety",
+        "n": 606,
+        "children": [
+            "Fire Alarm",
+            "Food Preparation Fire Safety"
+        ]
+    },
+    {
+        "name": "Fire Safety",
+        "parent": "Other",
+        "n": 6419,
+        "children": [
+            "Fire Safety Director On-Site Exam Scheduling",
+            "Inspection",
+            "Other (Fire Safety)"
+        ]
+    },
+    {
+        "name": "Other Enforcement",
+        "parent": "General",
+        "n": 18292,
+        "children": []
+    },
+    {
+        "name": "Alzheimer's Care",
+        "parent": "Other (General)",
+        "n": 229,
+        "children": []
+    },
+    {
+        "name": "Beach, Pool, or Sauna Complaint",
+        "parent": "Other (General)",
+        "n": 170,
+        "children": []
+    },
+    {
+        "name": "Complaint",
+        "parent": "Other (General)",
+        "n": 1473,
+        "children": []
+    },
+    {
+        "name": "Compliment",
+        "parent": "Other (General)",
+        "n": 92,
+        "children": []
+    },
+    {
+        "name": "Daycare Inquiry",
+        "parent": "Other (General)",
+        "n": 542,
+        "children": []
+    },
+    {
+        "name": "Found Property",
+        "parent": "Other (General)",
+        "n": 314,
+        "children": []
+    },
+    {
+        "name": "Housing Inquiry",
+        "parent": "Other (General)",
+        "n": 1771,
+        "children": []
+    },
+    {
+        "name": "Inquiry",
+        "parent": "Other (General)",
+        "n": 502,
+        "children": []
+    },
+    {
+        "name": "Unspecified Miscellaneous Issue",
+        "parent": "Other (General)",
+        "n": 1099,
+        "children": []
+    },
+    {
+        "name": "Other (General)",
+        "parent": "General",
+        "n": 6192,
+        "children": [
+            "Alzheimer's Care",
+            "Beach, Pool, or Sauna Complaint",
+            "Complaint",
+            "Compliment",
+            "Daycare Inquiry",
+            "Found Property",
+            "Housing Inquiry",
+            "Inquiry",
+            "Unspecified Miscellaneous Issue"
+        ]
+    },
+    {
+        "name": "General",
+        "parent": "Other",
+        "n": 24484,
+        "children": [
+            "Other Enforcement",
+            "Other (General)"
+        ]
+    },
+    {
+        "name": "Damaged Tree",
+        "parent": "Greenery",
+        "n": 24880,
+        "children": []
+    },
+    {
+        "name": "Dead or Dying Tree",
+        "parent": "Greenery",
+        "n": 10794,
+        "children": []
+    },
+    {
+        "name": "New Tree Request",
+        "parent": "Greenery",
+        "n": 18347,
+        "children": []
+    },
+    {
+        "name": "Overgrown Tree or Branches",
+        "parent": "Greenery",
+        "n": 12919,
+        "children": []
+    },
+    {
+        "name": "Illegal Tree Damage",
+        "parent": "Other (Greenery)",
+        "n": 3154,
+        "children": []
+    },
+    {
+        "name": "Poison Ivy",
+        "parent": "Other (Greenery)",
+        "n": 131,
+        "children": []
+    },
+    {
+        "name": "Unspecified Greenery Issue",
+        "parent": "Other (Greenery)",
+        "n": 232,
+        "children": []
+    },
+    {
+        "name": "Other (Greenery)",
+        "parent": "Greenery",
+        "n": 3517,
+        "children": [
+            "Illegal Tree Damage",
+            "Poison Ivy",
+            "Unspecified Greenery Issue"
+        ]
+    },
+    {
+        "name": "Greenery",
+        "parent": "Other",
+        "n": 70457,
+        "children": [
+            "Damaged Tree",
+            "Dead or Dying Tree",
+            "New Tree Request",
+            "Overgrown Tree or Branches",
+            "Other (Greenery)"
+        ]
+    },
+    {
+        "name": "Homeless Encampment",
+        "parent": "Homelessness",
+        "n": 5184,
+        "children": []
+    },
+    {
+        "name": "Homelessness Assistance",
+        "parent": "Homelessness",
+        "n": 45665,
+        "children": []
+    },
+    {
+        "name": "Panhandling",
+        "parent": "Other (Homelessness)",
+        "n": 479,
+        "children": []
+    },
+    {
+        "name": "Other (Homelessness)",
+        "parent": "Homelessness",
+        "n": 479,
+        "children": [
+            "Panhandling"
+        ]
+    },
+    {
+        "name": "Homelessness",
+        "parent": "Other",
+        "n": 51328,
+        "children": [
+            "Homeless Encampment",
+            "Homelessness Assistance",
+            "Other (Homelessness)"
+        ]
+    },
+    {
+        "name": "Benefit Card Replacement",
+        "parent": "Paperwork",
+        "n": 25102,
+        "children": []
+    },
+    {
+        "name": "Literature Request",
+        "parent": "Paperwork",
+        "n": 36558,
+        "children": []
+    },
+    {
+        "name": "DCA or DOH New License Application Request",
+        "parent": "Other (Paperwork)",
+        "n": 1808,
+        "children": []
+    },
+    {
+        "name": "Parking Status Request",
+        "parent": "Other (Paperwork)",
+        "n": 6349,
+        "children": []
+    },
+    {
+        "name": "Tattooing Paperwork Inquiry",
+        "parent": "Other (Paperwork)",
+        "n": 81,
+        "children": []
+    },
+    {
+        "name": "Unspecified Paperwork Inquiry",
+        "parent": "Other (Paperwork)",
+        "n": 211,
+        "children": []
+    },
+    {
+        "name": "Other (Paperwork)",
+        "parent": "Paperwork",
+        "n": 8449,
+        "children": [
+            "DCA or DOH New License Application Request",
+            "Parking Status Request",
+            "Tattooing Paperwork Inquiry",
+            "Unspecified Paperwork Inquiry"
+        ]
+    },
+    {
+        "name": "Paperwork",
+        "parent": "Other",
+        "n": 70109,
+        "children": [
+            "Benefit Card Replacement",
+            "Literature Request",
+            "Other (Paperwork)"
+        ]
+    },
+    {
+        "name": "Parks Violation",
+        "parent": "Parks",
+        "n": 2279,
+        "children": []
+    },
+    {
+        "name": "Unspecified Issue",
+        "parent": "Parks",
+        "n": 1939,
+        "children": []
+    },
+    {
+        "name": "Parks",
+        "parent": "Other",
+        "n": 4218,
+        "children": [
+            "Parks Violation",
+            "Unspecified Issue"
+        ]
+    },
+    {
+        "name": "Low Income Senior Citizen Housing",
+        "parent": "Property and Buildings",
+        "n": 5994,
+        "children": []
+    },
+    {
+        "name": "Disability Rent Increase Exemption",
+        "parent": "Other (Property and Buildings)",
+        "n": 590,
+        "children": []
+    },
+    {
+        "name": "Real Property Income and Expense Issue",
+        "parent": "Other (Property and Buildings)",
+        "n": 244,
+        "children": []
+    },
+    {
+        "name": "Other (Property and Buildings)",
+        "parent": "Property and Buildings",
+        "n": 834,
+        "children": [
+            "Disability Rent Increase Exemption",
+            "Real Property Income and Expense Issue"
+        ]
+    },
+    {
+        "name": "Property and Buildings",
+        "parent": "Other",
+        "n": 6828,
+        "children": [
+            "Low Income Senior Citizen Housing",
+            "Other (Property and Buildings)"
+        ]
+    },
+    {
+        "name": "DF Property Document Request",
+        "parent": "Property and Housing",
+        "n": 5934,
+        "children": []
+    },
+    {
+        "name": "Payment Issue",
+        "parent": "Property and Housing",
+        "n": 4120,
+        "children": []
+    },
+    {
+        "name": "Property Account Update",
+        "parent": "Property and Housing",
+        "n": 6555,
+        "children": []
+    },
+    {
+        "name": "Property Reduction",
+        "parent": "Property and Housing",
+        "n": 10263,
+        "children": []
+    },
+    {
+        "name": "Senior Citizen Rent Increase Exemption",
+        "parent": "Property and Housing",
+        "n": 6569,
+        "children": []
+    },
+    {
+        "name": "Unspecified Property Issue",
+        "parent": "Other (Property and Housing)",
+        "n": 1748,
+        "children": []
+    },
+    {
+        "name": "Other (Property and Housing)",
+        "parent": "Property and Housing",
+        "n": 1748,
+        "children": [
+            "Unspecified Property Issue"
+        ]
+    },
+    {
+        "name": "Property and Housing",
+        "parent": "Other",
+        "n": 35189,
+        "children": [
+            "DF Property Document Request",
+            "Payment Issue",
+            "Property Account Update",
+            "Property Reduction",
+            "Senior Citizen Rent Increase Exemption",
+            "Other (Property and Housing)"
+        ]
+    },
+    {
+        "name": "Bus Stop Shelter Placement",
+        "parent": "Public Transit",
+        "n": 204,
+        "children": []
+    },
+    {
+        "name": "Ferry Inquiry or Complaint",
+        "parent": "Public Transit",
+        "n": 917,
+        "children": []
+    },
+    {
+        "name": "Public Transit",
+        "parent": "Other",
+        "n": 1121,
+        "children": [
+            "Bus Stop Shelter Placement",
+            "Ferry Inquiry or Complaint"
+        ]
+    },
+    {
+        "name": "Appliance",
+        "parent": "Unknown",
+        "n": 12618,
+        "children": []
+    },
+    {
+        "name": "Unknown",
+        "parent": "Other",
+        "n": 12618,
+        "children": [
+            "Appliance"
+        ]
+    },
+    {
+        "name": "Other",
+        "parent": "root",
+        "n": 437239,
+        "children": [
+            "Air Quality",
+            "Animal Issues",
+            "Construction",
+            "Consumer Complaint",
+            "Crime",
+            "Fire Safety",
+            "General",
+            "Greenery",
+            "Homelessness",
+            "Paperwork",
+            "Parks",
+            "Property and Buildings",
+            "Property and Housing",
+            "Public Transit",
+            "Unknown"
+        ]
+    }
+]

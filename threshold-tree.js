@@ -44,8 +44,17 @@ class ThresholdTree {
     }
 
     as_hierarchy() {
+
         let repr = [];
         traverse_and_flatten(this.root, repr);
+
+        repr.unshift({
+            "name": this.root.name,
+            "parent": "",
+            "n": this.root.n,
+            "children": this.root.children.map(c => c.name)
+        });
+
         return repr;
     }
     // TODO: Add the d3.stratify() call necessary to get this working, and keep it from crashing (as it does currently).
@@ -142,14 +151,42 @@ function traverse_and_shake(node, threshold) {
         let [this_n, parent_n] = [node.n, node.parent.n];
         if (threshold * parent_n > this_n) {
             // Shake.
+
+            // Case 1: its parent node (actually should be its grandparent) doesn't already have an Other node.
             if (node.parent.other == null) {
-                node.parent.other = new DataNode("Other", this_n, node.parent, node.children);
-                node.parent.children.push(node.parent.other);
-            } else {
-                node.parent.other.children.push(node);
+
+                // Create the new parent node to-be.
+                let nn = null;
+                if (node.parent.name == "root") { nn = "Other"; } else { nn = `Other (${node.parent.name})` }
+
+                let new_other_node = new DataNode(nn, this_n, node.parent, [node]);
+
+                // Remove this node from its still-parent's (soon-to-be-grandparent's) children.
+                node.parent.children = node.parent.children.filter(function(nd) { return nd.name != node.name; });
+
+                // Add the parent node to-be to the old parent (now grandparent) node.
+                node.parent.other = new_other_node;
+                node.parent.children.push(new_other_node);
+
+                // Change the parent node to its grandparent's Other node, its own parent node.
+                node.parent = node.parent.other;
+
             }
-            // Remove this node from the parent's children.
-            node.parent.children = node.parent.children.filter(function(nd) { return nd.name != node.name; });
+            // Case 2: its parent node (actually should be its grandparent) already has an Other node.
+            else {
+                // Push this node into its to-be-new parent's children.
+                node.parent.other.children.push(node);
+
+                // Remove this node from its still-parent's (soon-to-be-grandparent's) children.
+                node.parent.children = node.parent.children.filter(function(nd) { return nd.name != node.name; });
+
+                // Change the parent node to its grandparent's Other node, its own parent node.
+                node.parent = node.parent.other;
+
+                // Add this node's n to its new parent Other node's n.
+                node.parent.n += node.n;
+
+            }
         }
     }
 }

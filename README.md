@@ -10,8 +10,10 @@ To get this for [Node.JS](https://nodejs.org/en/):
 
 `npm install threshold-tree`
 
-To build a bundle for front-end using [browserify](http://browserify.org/) run:
+To build a bundle for front-end using [browserify](http://browserify.org/) run e.g.:
 
-`browserify threshold-tree.js -o bundle.js`
+`browserify threshold-tree.js -o umd/threshold-tree.js --standalone tree`
 
-Maybe I'll put it on [unpkg](https://unpkg.com/) at some point...
+The CDN link (via [unpkg](https://unpkg.com/)) is:
+
+`https://unpkg.com/threshold-tree@[VERSION]/umd/threshold-tree`
