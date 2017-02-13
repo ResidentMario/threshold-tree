@@ -3908,9 +3908,10 @@ class DataNode {
 
 class ThresholdTree {
     
-    constructor(data, threshold) {
+    constructor(data, threshold, nshakes) {
 
         if (!threshold) { this.threshold = 0.1; } else { this.threshold = threshold; }
+        if (!nshakes) { this.nshakes = 1; } else { this.nshakes = nshakes; }
 
         // Turn the data read-out into a tree.
         // Step 0: Generate a tree root.
@@ -3933,7 +3934,9 @@ class ThresholdTree {
         }
 
         // Step n + 1: shake the data into a logarithmic form.
-        traverse_and_shake(this.root, this.threshold);
+        for (let i = 0; i < nshakes; i++) {
+            traverse_and_shake(this.root, this.threshold);
+        }
 
     }
 

@@ -1,6 +1,6 @@
 {
   "name": "threshold-tree",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "threshold-tree.js",
   "dependencies": {
     "lodash": "^4.17.4"
